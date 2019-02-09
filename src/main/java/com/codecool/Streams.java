@@ -54,13 +54,13 @@ public class Streams {
 
         Integer twoToTheZeroth = 1;
         UnaryOperator<Integer> doubler = (Integer x) -> 2 * x;
-        Stream<Integer> s4 = /* ??? */;
+        Stream<Integer> s4 = Stream.iterate(twoToTheZeroth, doubler);
 
         /*
          * Create a stream containing the first ten elements of s4.
          */
 
-        Stream<Integer> s5 = s4. /* ??? */;
+        Stream<Integer> s5 = s4.limit(10);
 
         /*
          * Create a stream containing the elements of the Fibonacci
