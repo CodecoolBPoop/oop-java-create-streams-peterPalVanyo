@@ -1,10 +1,9 @@
 package com.codecool;
 
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 import java.util.List;
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
+import java.util.stream.Stream;
 
 public class Streams {
     public static void main(String[] args) {
@@ -37,7 +36,7 @@ public class Streams {
          * HINT: the keyword here is "collect"
          */
 
-        List<String> l1 = /* ??? */;
+        List<String> l1 = s3.collect(Collectors.toList());
 
         /*
          * Streams can be infinite.  We obviously cannot create such a
